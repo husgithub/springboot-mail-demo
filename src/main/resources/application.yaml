@@ -1,0 +1,33 @@
+server:
+  port: 8081
+spring:
+  mail:
+    host: smtp.qq.com #SMTP服务器地址
+    username: xxx #登陆账号
+    password: xxx  #登陆密码（或授权码）
+    properties:
+      from: xxx@qq.com #邮件发信人（即真实邮箱）
+
+##自定义的邮件配置
+my:
+  mail:
+    defaultEncoding: UTF-8
+    protocol: smtp
+    host: smtp.qq.com #SMTP服务器地址
+    from: xxx@qq.com #邮件发信人（即真实邮箱）
+    username: xxx #登陆账号
+    password: xxx #登陆密码（或授权码）
+    to:
+      - xxx@xxx.com #收件人邮箱
+    uploadPath: D:/workspace/idea-test/springboot-mail-demo/target/classes/static/img/
+
+  servlet:
+    multipart:
+      max-file-size: 10MB #限制单个文件大小
+      max-request-size: 50MB #限制请求总量
+  freemarker:
+    cache: false
+    template-loader-path: classpath:/templates/
+    charset: UTF-8
+    content-type: text/html
+    suffix: .ftl

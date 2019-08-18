@@ -1,0 +1,17 @@
+.container {
+    padding: 2px;
+}
+
+.container .top {
+    border-bottom: 1px solid grey;
+    padding: 0px 20px;
+}
+
+.container .success {
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.success img {
+    width: 70px;
+}
